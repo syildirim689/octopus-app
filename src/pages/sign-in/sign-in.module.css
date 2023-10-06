@@ -1,0 +1,43 @@
+.form {
+    @apply flex flex-col gap-5
+}
+
+.head {
+    @apply flex flex-col gap-2 mb-5
+}
+
+.h1 {
+    @apply font-bold text-[32px] leading-[41.6px] text-[#4FD1C5]
+}
+
+.p {
+    @apply font-bold text-[#A0AEC0] text-sm leading-[19.6px]
+}
+
+.logoBlock {
+    @apply h-screen
+}
+
+.logoContainer {
+    @apply bg-[url('/public/img/background/sign-in-background.svg')] bg-no-repeat bg-cover rounded-bl-[25px] h-[872px] w-full flex items-center justify-center
+}
+
+.logo {
+    @apply w-[354px] h-auto
+}
+
+.background {
+    @apply w-full h-full object-cover
+}
+
+.singUpBlock {
+    @apply text-center mt-5 text-sm leading-[19.6px]
+}
+
+.singUpText {
+    @apply text-[#A0AEC0]
+}
+
+.link {
+    @apply text-[#4FD1C5] font-bold
+}

@@ -1,0 +1,47 @@
+.container {
+    @apply flex flex-col gap-5 w-fit
+}
+
+.divider {
+    @apply bg-gradient-to-r from-transparent via-gray-300 to-white h-[1px] w-full mt-5
+}
+
+.sidebar {
+    @apply flex flex-col;
+}
+
+.sidebarTitle {
+    @apply font-bold text-[#2D3748] text-xs leading-[18px]
+}
+
+.icon {
+    @apply w-[15px] h-[15px]
+}
+
+.iconContainer {
+    @apply w-[30px] h-[30px] flex items-center justify-center rounded-[12px] bg-white shadow-header
+}
+
+.title {
+    @apply font-bold text-[#A0AEC0] text-xs leading-[18px]
+}
+
+.link {
+    @apply flex items-center gap-3 py-2 px-3 rounded-[15px]
+}
+
+.active .iconContainer {
+    @apply bg-[#4FD1C5]
+}
+
+.active img {
+    @apply filter invert brightness-0
+}
+
+.active span {
+    @apply text-[#2D3748]
+}
+
+.active {
+    @apply bg-white rounded-[15px] shadow-header w-full
+}

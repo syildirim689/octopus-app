@@ -1,0 +1,11 @@
+.container {
+    @apply flex flex-col
+}
+
+.label {
+    @apply font-normal text-sm leading-[19.6px] text-[#2D3748] pl-1.5 mb-1
+}
+
+.input {
+    @apply border border-[#E2E8F0] text-[#A0AEC0] font-normal text-sm leading-[19.6px] bg-white px-5 py-3 outline-none rounded-[15px];
+}

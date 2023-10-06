@@ -1,0 +1,42 @@
+.container {
+    @apply flex items-center gap-3
+}
+
+.span {
+    @apply font-normal text-xs text-[#2D3748] leading-[18px]
+}
+
+.switch {
+    width: 36px;
+    height: 18.5px;
+    background-color: #ccc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider {
+    width: 13.5px;
+    height: 13.5px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.switch.on {
+    background-color: rgba(79, 209, 197, 1);
+}
+
+.slider.on {
+    transform: translateX(19.5px);
+}
+
+.switch.off {
+    background-color: #ccc;
+}
+
+.slider.off {
+    transform: translateX(3px);
+}

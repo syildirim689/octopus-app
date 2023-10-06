@@ -1,0 +1,35 @@
+.header {
+    @apply flex justify-center
+}
+
+.container {
+    @apply fixed top-[24px] w-full
+}
+
+.mainBlock {
+    @apply flex items-center justify-between bg-white bg-opacity-80 shadow-header rounded-[15px] h-[70px] border border-white px-5
+}
+
+.linkGroup {
+    @apply flex items-center gap-10
+}
+
+.link {
+    @apply flex items-center gap-1
+}
+
+.title {
+    @apply font-bold text-[10px] leading-[15px] text-[#2D3748]
+}
+
+.icon {
+    @apply w-[11px] h-[11px]
+}
+
+.logo {
+    @apply w-[169.49px] h-[32.48px]
+}
+
+.button {
+    @apply font-bold text-white text-[10px] leading-[15px] rounded-[34.5px] px-10 py-3 bg-gradient-to-r from-[#313860] to-[#151928]
+}

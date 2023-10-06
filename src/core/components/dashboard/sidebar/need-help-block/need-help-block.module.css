@@ -1,0 +1,23 @@
+.container {
+    @apply flex flex-col gap-3 rounded-[15px] bg-[url('/public/img/background/need-help-background.svg')] bg-no-repeat bg-cover w-fit p-3
+}
+
+.iconContainer {
+    @apply w-[35px] h-[35px] bg-white rounded-[12px] flex items-center justify-center
+}
+
+.icon {
+    @apply w-[24px] h-[24px]
+}
+
+.h3 {
+    @apply font-bold text-sm leading-[19.6px] text-white
+}
+
+.p {
+    @apply font-normal text-xs leading-[18px] text-white
+}
+
+.link {
+    @apply text-[#2D3748] text-[10px] text-center font-bold rounded-[12px] bg-white w-[186px] h-[35px] flex items-center justify-center
+}

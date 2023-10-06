@@ -1,0 +1,7 @@
+.container {
+    @apply w-full
+}
+
+.button {
+    @apply bg-[#4FD1C5] text-white font-bold text-xs text-center px-5 py-3 rounded-[12px] outline-none w-full
+}

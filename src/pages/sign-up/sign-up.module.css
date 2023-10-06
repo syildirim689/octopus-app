@@ -1,0 +1,55 @@
+.container {
+    @apply bg-[url('/public/img/background/sign-in-background.svg')] bg-no-repeat bg-cover rounded-[15px] w-full h-[50vh]
+}
+
+.content {
+    @apply py-36 flex flex-col items-center justify-center text-white
+}
+
+.form {
+    @apply flex flex-col gap-5
+}
+
+.formBlock {
+    @apply bg-white p-12 rounded-[15px] mt-10 shadow-header
+}
+
+.social {
+    @apply flex items-center justify-center gap-5
+}
+
+.socialItem {
+    @apply w-[75px] h-[75px] rounded-[15px] border flex items-center justify-center
+}
+
+.registerTitle {
+    @apply text-center text-[#2D3748] font-bold text-[18px] leading-[25.2px] mb-5
+}
+
+.divider {
+    @apply my-5 text-[#A0AEC0] font-bold text-[18px] leading-[25.2px] text-center
+}
+
+.titleBlock {
+    @apply text-center
+}
+
+.title {
+    @apply font-bold text-[32px] leading-[41.6px] mb-5
+}
+
+.p {
+    @apply text-sm leading-[19.6px] w-2/3 mx-auto
+}
+
+.singInBlock {
+    @apply text-center mt-5 text-sm leading-[19.6px]
+}
+
+.singInText {
+    @apply text-[#A0AEC0]
+}
+
+.link {
+    @apply text-[#4FD1C5] font-bold
+}
