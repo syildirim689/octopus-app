@@ -1,5 +1,6 @@
 import {UseFormRegister} from "react-hook-form";
 import {InputHTMLAttributes} from "react";
+import exp from "constants";
 
 export interface SignInFormData {
     email: string;
@@ -47,4 +48,31 @@ export type SocialMediaDataProps = {
     id: number;
     icon: string;
     url: string;
-};
+}
+
+export interface User {
+    id: number;
+    image: string;
+    name: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    company: { department: string; title: string };
+    function: { department: string; title: string };
+    status: boolean;
+    employed: string;
+    birthDate: string;
+}
+
+export interface Product {
+    id: number;
+    description: string;
+    image: string;
+    thumbnail: string;
+    status: string;
+    companies: string;
+    title: string;
+    price: number;
+    completion: number;
+    budget: number;
+}

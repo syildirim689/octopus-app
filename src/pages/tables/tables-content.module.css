@@ -1,13 +1,151 @@
+body {
+    @apply bg-[#F8F9FA]
+}
+
 .container {
     @apply flex-1 ml-12
 }
 
+.content  {
+    @apply bg-white mt-5 p-5 rounded-[15px]
+}
+
 .title {
-    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748] -mt-2 ml-4
 }
 
 .subTitle {
     @apply font-bold text-lg leading-[25.2px] text-[#2D3748]
 }
 
+.table {
+    @apply w-full mt-4 table-auto
+}
 
+.table thead {
+    @apply border-b-[1px] border-[#E2E8F0]
+}
+
+.table tbody tr {
+    @apply border-b-[1px] border-[#E2E8F0]
+}
+
+.table tbody td {
+    @apply tracking-[0.05em] py-3
+}
+
+.table tbody tr:last-child {
+    @apply border-b-0
+}
+
+.table th {
+    @apply font-bold text-[10px] leading-[15px] text-[#A0AEC0] text-left tracking-[0.05em] py-3
+}
+
+.table th:last-child {
+    @apply text-right
+}
+
+.nameBlock {
+    @apply flex items-center gap-2
+}
+
+.nameBlock img {
+    @apply w-[40px] h-[40px] rounded-lg
+}
+
+.nameBlock div {
+    @apply flex flex-col
+}
+
+.nameBlock h4 {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.nameBlock span {
+    @apply text-sm leading-[19.6px] text-[#718096]
+}
+
+.functionBlock h4 {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.functionBlock span {
+    @apply text-sm leading-[19.6px] text-[#718096]
+}
+
+.onLine {
+    @apply font-bold text-sm text-white leading-[19.6px] bg-[#48BB78] rounded-[8px] w-[65px] h-[25px] px-3.5 py-1.5
+}
+
+.offLine {
+    @apply font-bold text-sm text-white leading-[19.6px] bg-[#CBD5E0] rounded-[8px] w-[65px] h-[25px] px-3.5 py-1.5
+}
+
+.employed {
+    @apply font-bold text-sm text-[#2D3748] leading-[19.6px]
+}
+
+.actionsBlock button {
+    @apply font-bold text-xs text-[#718096] leading-[18px]
+}
+
+.textBlock {
+    @apply flex items-center gap-1 mt-2
+}
+
+.textBlock img {
+    @apply w-[15px] h-[15px]
+}
+
+.textBlock div {
+    @apply text-sm leading-[19.6px] text-[#A0AEC0]
+}
+
+.textBlock span {
+    @apply font-bold
+}
+
+.companiesBlock {
+    @apply flex items-center gap-2 mt-2
+}
+
+.companiesBlock img {
+    @apply w-[20px] h-[20px] rounded
+}
+
+.companiesBlock h4 {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.budget {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.budget:before {
+    content: "$";
+}
+
+.statusText {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.completion span {
+    @apply font-bold text-sm text-[#4FD1C5] leading-[19.6px]
+}
+
+.progress {
+    @apply w-full max-w-[125px] h-[5px] bg-[#E2E8F0] rounded-[5px] mt-1
+}
+
+.progressLine {
+    @apply w-full h-[5px] bg-[#4FD1C5] rounded-[5px]
+}
+
+.iconBlock {
+    @apply text-center
+}
+
+.icon {
+    @apply w-[20px] h-[20px]
+}
