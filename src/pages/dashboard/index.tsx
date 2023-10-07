@@ -14,7 +14,7 @@ export default function DashboardPage({appTitle}: { appTitle: string }) {
             <Helmet>
                 <title>{title} | {appTitle}</title>
             </Helmet>
-            <HeaderDashboard/>
+            <HeaderDashboard title={title}/>
             <Sidebar/>
         </div>
     );

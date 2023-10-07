@@ -1,0 +1,13 @@
+.container {
+    @apply flex-1 ml-12
+}
+
+.title {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.subTitle {
+    @apply font-bold text-lg leading-[25.2px] text-[#2D3748]
+}
+
+

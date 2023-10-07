@@ -5,6 +5,11 @@ export async function getAllUsers() {
     return response.data;
 }
 
+export async function getAllUsersByLimit(limit: number) {
+    const response = await axios.get(`https://dummyjson.com/users?limit=${limit}`);
+    return response.data;
+}
+
 export async function getUserById(id: number) {
     const response = await axios.get(`https://dummyjson.com/users/${id}`);
     return response.data;

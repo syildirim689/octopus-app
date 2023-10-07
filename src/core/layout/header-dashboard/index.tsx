@@ -2,14 +2,14 @@ import SearchBar from "../../components/dashboard/search-bar";
 import {Link} from "react-router-dom";
 import styles from "./header-dashboard.module.css";
 
-export default function HeaderDashboard() {
+export default function HeaderDashboard({title}: { title: string }) {
     return (
         <header className={"flex items-center justify-between"}>
             <div className={"w-fit"}>
                 <img src={"/img/logo/aqua-logo.svg"} alt={"logo"}/>
             </div>
             <div className={"text-xs leading-[18x] w-full pl-32"}>
-                <span className={"text-[#A0AEC0]"}>Pages</span> / <span className={"text-[#2D3748]"}>Tables</span>
+                <span className={"text-[#A0AEC0]"}>Pages</span> / <span className={"text-[#2D3748]"}>{title}</span>
             </div>
             <div className={"flex items-center gap-3 w-fit"}>
                 <SearchBar/>

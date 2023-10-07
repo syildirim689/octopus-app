@@ -3,6 +3,7 @@ import React from "react";
 import HeaderDashboard from "../../core/layout/header-dashboard";
 import Sidebar from "../../core/components/dashboard/sidebar";
 import styles from './tables.module.css';
+import TablesContent from "./tables-content";
 
 export default function TablesPage({appTitle}: { appTitle: string }) {
     if (sessionStorage.getItem('token') === null) {
@@ -14,8 +15,11 @@ export default function TablesPage({appTitle}: { appTitle: string }) {
             <Helmet>
                 <title>{title} | {appTitle}</title>
             </Helmet>
-            <HeaderDashboard/>
-            <Sidebar/>
+            <HeaderDashboard title={title}/>
+            <div className={"flex"}>
+                <Sidebar/>
+                <TablesContent/>
+            </div>
         </div>
     );
 };
