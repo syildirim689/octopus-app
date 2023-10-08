@@ -6,10 +6,10 @@ body {
     @apply flex-1 ml-12
 }
 
-.content  {
-    @apply bg-white mt-5 p-5 rounded-[15px]
-}
-
 .title {
     @apply font-bold text-sm leading-[19.6px] text-[#2D3748] -mt-2 ml-4
+}
+
+.content {
+    @apply flex items-start gap-5 mt-5
 }

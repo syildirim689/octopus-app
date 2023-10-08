@@ -1,0 +1,95 @@
+.container {
+    @apply bg-white p-5 rounded-[15px] flex-initial w-full
+}
+
+.titleBlock {
+    @apply flex items-center justify-between
+}
+
+.title {
+    @apply font-bold text-lg leading-[25.2px] text-[#2D3748]
+}
+
+.textBlock {
+    @apply flex items-center gap-1 mt-2
+}
+
+.textBlock img {
+    @apply w-[15px] h-[15px]
+}
+
+.textBlock div {
+    @apply text-sm leading-[19.6px] text-[#A0AEC0]
+}
+
+.textBlock span {
+    @apply font-bold
+}
+
+.table {
+    @apply w-full mt-4 table-auto
+}
+
+.table thead {
+    @apply border-b-[1px] border-[#E2E8F0]
+}
+
+.table tbody tr {
+    @apply border-b-[1px] border-[#E2E8F0]
+}
+
+.table tbody td {
+    @apply tracking-[0.05em] py-3
+}
+
+.table tbody tr:last-child {
+    @apply border-b-0
+}
+
+.table th {
+    @apply font-bold text-[10px] leading-[15px] text-[#A0AEC0] text-left tracking-[0.05em] py-3
+}
+
+.table th:last-child {
+    @apply text-right
+}
+
+.companiesBlock {
+    @apply flex items-center gap-2 mt-2
+}
+
+.companiesBlock img {
+    @apply w-[20px] h-[20px] rounded
+}
+
+.companiesBlock h4 {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.budget {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.budget:before {
+    content: "$";
+}
+
+.completion span {
+    @apply font-bold text-sm text-[#4FD1C5] leading-[19.6px]
+}
+
+.progress {
+    @apply w-full max-w-[125px] h-[5px] bg-[#E2E8F0] rounded-[5px] mt-1
+}
+
+.progressLine {
+    @apply w-full h-[5px] bg-[#4FD1C5] rounded-[5px]
+}
+
+.members {
+    @apply flex items-center gap-2 mt-2
+}
+
+.members img {
+    @apply w-[20px] h-[20px] rounded-full -ml-4 border-white border-[2px]
+}

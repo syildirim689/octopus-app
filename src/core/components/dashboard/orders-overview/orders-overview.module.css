@@ -1,0 +1,43 @@
+.container {
+    @apply bg-white rounded-[15px] p-5 w-[519px] h-[495px]
+}
+
+.container h3 {
+    @apply font-bold text-lg leading-[25.2px] text-[#2D3748] my-1.5
+}
+
+.subText {
+    @apply text-sm leading-[19.6px] text-[#A0AEC0] mb-5
+}
+
+.subText span {
+    @apply font-bold text-[#48BB78]
+}
+
+.timeline {
+    @apply flex flex-col gap-5
+}
+
+.timelineItem {
+    @apply flex items-start gap-3 relative
+}
+
+.iconLine {
+    @apply w-[2px] bg-[#E2E8F0] h-3/4 absolute top-[20px] left-[7px]
+}
+
+.iconContainer {
+    @apply w-[16px] h-[16px] flex items-center justify-center
+}
+
+.textContainer {
+    @apply flex flex-col gap-1
+}
+
+.textContainer h4 {
+    @apply font-bold text-sm leading-[19.6px] text-[#2D3748]
+}
+
+.textContainer span {
+    @apply font-bold text-xs leading-[18px] text-[#A0AEC0]
+}

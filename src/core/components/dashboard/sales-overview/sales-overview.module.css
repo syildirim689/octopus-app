@@ -1,0 +1,3 @@
+.container {
+    @apply bg-white p-5 rounded-[15px] flex-initial
+}

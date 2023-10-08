@@ -8,7 +8,7 @@ export default function HeaderDashboard({title}: { title: string }) {
             <div className={"w-fit"}>
                 <img src={"/img/logo/aqua-logo.svg"} alt={"logo"}/>
             </div>
-            <div className={"text-xs leading-[18x] w-full pl-[140px]"}>
+            <div className={"text-xs leading-[18x]"}>
                 <span className={"text-[#A0AEC0]"}>Pages</span> / <span className={"text-[#2D3748]"}>{title}</span>
             </div>
             <div className={"flex items-center gap-3 w-fit"}>

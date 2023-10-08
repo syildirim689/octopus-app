@@ -1,0 +1,68 @@
+.container {
+    @apply bg-white p-5 rounded-[15px] flex-initial
+}
+
+.graph {
+    @apply flex items-end gap-10 rounded-[12px] font-bold text-white text-[10px] p-5;
+    background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+}
+
+.numbers {
+    @apply flex flex-col gap-3
+}
+
+.lines {
+    @apply flex items-end gap-10
+}
+
+.line {
+    @apply w-[7px] rounded-[15px] bg-white
+}
+
+.title {
+    @apply font-bold text-[#2D3748] text-lg leading-[25.2px] mt-5
+}
+
+.text {
+    @apply text-[#A0AEC0] text-sm leading-[19.6px] mt-1
+}
+
+.text span {
+    @apply text-[#4FD1C5] font-bold
+}
+
+.cards {
+    @apply flex items-center gap-5 mt-5
+}
+
+.card {
+    @apply w-full
+}
+
+.cardHeader {
+    @apply flex items-center gap-2
+}
+
+.cardHeader span {
+    @apply text-[#A0AEC0] leading-[18px] text-xs font-bold
+}
+
+.cardBody {
+    @apply text-[#2D3748] text-lg leading-[25.2px] font-bold mt-2
+}
+
+.cardFooter {
+    @apply mt-2
+}
+
+.iconContainer {
+    @apply flex items-center justify-center bg-[#4FD1C5] rounded-[6px] w-[25px] h-[25px]
+}
+
+.progress {
+    @apply w-full max-w-[125px] h-[5px] bg-[#E2E8F0] rounded-[5px] mt-1
+}
+
+.progressLine {
+    @apply w-full h-[5px] bg-[#4FD1C5] rounded-[5px]
+}

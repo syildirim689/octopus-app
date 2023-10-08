@@ -50,6 +50,29 @@ export type SocialMediaDataProps = {
     url: string;
 }
 
+export type AnalyticCardsDataProps = {
+    id: number;
+    title: string;
+    icon: string;
+    value: string;
+    percent: number;
+    rate: boolean;
+}
+
+export type OrdersOverviewDataProps = {
+    id: number;
+    title: string;
+    date: string;
+    icon: string;
+}
+
+export type ActiveUsersDataProps = {
+    id: number;
+    title: string;
+    value: string;
+    icon?: string;
+}
+
 export interface User {
     id: number;
     image: string;
@@ -75,4 +98,17 @@ export interface Product {
     price: number;
     completion: number;
     budget: number;
+}
+
+export interface ProjectsProps {
+    id: number;
+    title: string;
+    thumbnail: string;
+    image: string;
+    images: string[];
+    price: number;
+    completion: number;
+    companies: string;
+    budget: number;
+    members: string;
 }

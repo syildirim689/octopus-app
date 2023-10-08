@@ -1,0 +1,55 @@
+.container {
+    @apply grid grid-cols-4 gap-5 mt-5
+}
+
+.card {
+    @apply flex justify-between bg-white rounded-[15px] shadow-header p-5
+}
+
+.text h3 {
+    @apply text-[#A0AEC0] font-bold text-xs leading-[18px]
+}
+
+.text div {
+    @apply flex items-end gap-1
+}
+
+.text h4 {
+    @apply text-[#2D3748] font-bold text-lg leading-[25.2px]
+}
+
+.text span {
+    @apply font-bold text-sm leading-[19.6px]
+}
+
+.iconContainer {
+    @apply bg-[#4FD1C5] rounded-[12px] w-[45px] h-[45px] flex items-center justify-center
+}
+
+.icon img {
+    @apply w-[22.5px] h-[22.5px]
+}
+
+.positive {
+    @apply text-[#48BB78];
+}
+
+.positive:after {
+    content: "%";
+}
+
+.positive:before {
+    content: "+";
+}
+
+.negative {
+    @apply text-[#E53E3E];
+}
+
+.negative:after {
+    content: "%";
+}
+
+.negative:before {
+    content: "-";
+}

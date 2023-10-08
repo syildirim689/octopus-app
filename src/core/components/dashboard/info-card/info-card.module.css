@@ -1,0 +1,52 @@
+.leftContent {
+    @apply flex items-center justify-between bg-white mt-5 rounded-[15px] p-5
+}
+
+.rightContent {
+    @apply bg-white mt-5 rounded-[15px] p-5
+}
+
+.content {
+    @apply bg-[url('/public/img/info-background.png')] bg-no-repeat bg-cover rounded-[12px] w-[654px] h-[280px] p-5 relative
+}
+
+.textContent {
+    @apply rounded-[12px] w-[654px] h-[280px] p-5 absolute top-0 left-0 flex flex-col justify-between gap-5 z-10;
+    background: linear-gradient(360deg, rgba(49, 56, 96, 0.16) 0%, rgba(21, 25, 40, 0.88) 100%);
+}
+
+.textContent h4 {
+    @apply font-bold text-lg leading-[25.2px] text-white mb-1
+}
+
+.textContent p {
+    @apply text-sm leading-[19.6px] text-white
+}
+
+.readMore {
+    @apply flex items-center gap-2
+}
+
+.readMore span {
+    @apply font-bold text-xs leading-[19.6px] text-white
+}
+
+.readMore img {
+    @apply w-[12px] h-[12px]
+}
+
+.infoCard {
+    @apply flex items-center gap-5
+}
+
+.text {
+    @apply text-sm leading-[19.6px] text-[#A0AEC0]
+}
+
+.text p {
+    @apply w-3/4
+}
+
+.logo {
+    @apply flex items-center justify-center bg-[url('/public/img/background/need-help-background.svg')] bg-no-repeat bg-cover bg-center rounded-[12px] w-[360px] h-[280px]
+}
