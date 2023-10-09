@@ -5,11 +5,13 @@ import styles from "./header-dashboard.module.css";
 export default function HeaderDashboard({title}: { title: string }) {
     return (
         <header className={"flex items-center justify-between"}>
-            <div className={"w-fit"}>
-                <img src={"/img/logo/aqua-logo.svg"} alt={"logo"}/>
-            </div>
-            <div className={"text-xs leading-[18x]"}>
-                <span className={"text-[#A0AEC0]"}>Pages</span> / <span className={"text-[#2D3748]"}>{title}</span>
+            <div className={"flex items-center gap-[103px] w-fit"}>
+                <div>
+                    <img src={"/img/logo/aqua-logo.svg"} alt={"logo"}/>
+                </div>
+                <div className={"text-xs leading-[18x]"}>
+                    <span className={"text-[#A0AEC0]"}>Pages</span> / <span className={"text-[#2D3748]"}>{title}</span>
+                </div>
             </div>
             <div className={"flex items-center gap-3 w-fit"}>
                 <SearchBar/>

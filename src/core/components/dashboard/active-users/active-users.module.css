@@ -1,5 +1,5 @@
 .container {
-    @apply bg-white p-5 rounded-[15px] flex-initial
+    @apply bg-white p-5 rounded-[15px] col-span-2
 }
 
 .graph {

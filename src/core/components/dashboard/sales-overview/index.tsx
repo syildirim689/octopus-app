@@ -1,4 +1,59 @@
 import styles from "./sales-overview.module.css";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    LineController,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js';
+import {LineElement} from 'chart.js';
+import {Line} from 'react-chartjs-2';
+import 'chart.js/auto';
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    LineController,
+    Title,
+    Tooltip,
+    Legend,
+    LineElement
+);
+
+export const options = {
+    responsive: true,
+    plugins: {
+        legend: {
+            display: false,
+        },
+        title: {
+            display: false,
+        },
+    },
+    pointRadius: 0,
+};
+
+const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', "Nov", "Dec"];
+
+export const data = {
+    labels,
+    datasets: [
+        {
+            data: labels.map(() => Math.floor(Math.random() * 500)),
+            borderColor: 'rgba(79, 209, 197, 1)',
+            backgroundColor: 'rgba(79, 209, 197, 0.2)',
+            fill: true,
+        },
+        {
+            data: labels.map(() => Math.floor(Math.random() * 500)),
+            borderColor: 'rgba(45, 55, 72, 1)',
+            backgroundColor: 'rgba(45, 55, 72, 0.2)',
+            fill: true,
+        },
+    ],
+};
 
 export default function SalesOverview() {
     return (
@@ -8,44 +63,7 @@ export default function SalesOverview() {
                 <span>(+5) more</span> in 2021
             </div>
             <div className={styles.chart}>
-                <div className={styles.values}>
-                    <div className={styles.numbers}>
-                        <span>500</span>
-                        <span>400</span>
-                        <span>300</span>
-                        <span>200</span>
-                        <span>100</span>
-                        <span>0</span>
-                    </div>
-                    <div className={styles.bars}>
-                        <div className={styles.bar} style={{height: "100%"}}></div>
-                        <div className={styles.bar} style={{height: "90%"}}></div>
-                        <div className={styles.bar} style={{height: "80%"}}></div>
-                        <div className={styles.bar} style={{height: "70%"}}></div>
-                        <div className={styles.bar} style={{height: "60%"}}></div>
-                        <div className={styles.bar} style={{height: "50%"}}></div>
-                        <div className={styles.bar} style={{height: "40%"}}></div>
-                        <div className={styles.bar} style={{height: "30%"}}></div>
-                        <div className={styles.bar} style={{height: "20%"}}></div>
-                        <div className={styles.bar} style={{height: "10%"}}></div>
-                        <div className={styles.bar} style={{height: "35%"}}></div>
-                        <div className={styles.bar} style={{height: "45%"}}></div>
-                    </div>
-                </div>
-                <div className={styles.labels}>
-                    <span>Jan</span>
-                    <span>Feb</span>
-                    <span>Mar</span>
-                    <span>Apr</span>
-                    <span>May</span>
-                    <span>Jun</span>
-                    <span>Jul</span>
-                    <span>Aug</span>
-                    <span>Sep</span>
-                    <span>Oct</span>
-                    <span>Nov</span>
-                    <span>Dec</span>
-                </div>
+                <Line className={"!h-[260px] !w-full"} options={options} data={data}/>
             </div>
         </div>
     );

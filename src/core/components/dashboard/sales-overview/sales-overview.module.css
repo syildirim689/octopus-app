@@ -1,5 +1,5 @@
 .container {
-    @apply bg-white p-5 rounded-[15px] flex-initial w-full
+    @apply bg-white p-5 rounded-[15px] col-span-3
 }
 
 .title {
@@ -15,22 +15,5 @@
 }
 
 .chart {
-    @apply mt-10
-}
-
-.numbers {
-    @apply flex flex-col gap-10
-}
-
-.numbers span,
-.labels span {
-    @apply font-bold text-[#CBD5E0] text-[10px] leading-[15px]
-}
-
-.labels {
-    @apply flex items-center justify-between gap-10 mt-10 ml-10
-}
-
-.values {
-    @apply flex items-center justify-between gap-5
+    @apply mt-10 w-full h-full
 }

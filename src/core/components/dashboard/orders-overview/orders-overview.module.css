@@ -1,5 +1,5 @@
 .container {
-    @apply bg-white rounded-[15px] p-5 w-[519px] h-[495px]
+    @apply bg-white rounded-[15px] p-5 col-span-2
 }
 
 .container h3 {

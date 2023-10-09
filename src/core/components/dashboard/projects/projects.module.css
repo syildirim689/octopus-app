@@ -1,5 +1,5 @@
 .container {
-    @apply bg-white p-5 rounded-[15px] flex-initial w-full
+    @apply bg-white p-5 rounded-[15px] col-span-3 w-full
 }
 
 .titleBlock {
