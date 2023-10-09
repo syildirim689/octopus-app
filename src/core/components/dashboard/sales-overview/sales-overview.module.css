@@ -1,3 +1,36 @@
 .container {
-    @apply bg-white p-5 rounded-[15px] flex-initial
+    @apply bg-white p-5 rounded-[15px] flex-initial w-full
+}
+
+.title {
+    @apply font-bold text-[#2D3748] text-lg leading-[25.2px]
+}
+
+.text {
+    @apply text-[#A0AEC0] text-sm leading-[19.6px] mt-1
+}
+
+.text span {
+    @apply text-[#4FD1C5] font-bold
+}
+
+.chart {
+    @apply mt-10
+}
+
+.numbers {
+    @apply flex flex-col gap-10
+}
+
+.numbers span,
+.labels span {
+    @apply font-bold text-[#CBD5E0] text-[10px] leading-[15px]
+}
+
+.labels {
+    @apply flex items-center justify-between gap-10 mt-10 ml-10
+}
+
+.values {
+    @apply flex items-center justify-between gap-5
 }
